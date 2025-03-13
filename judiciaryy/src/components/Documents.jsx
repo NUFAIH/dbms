@@ -16,7 +16,7 @@ const DocumentsDashboard = () => {
       const res = await axios.get("http://localhost:5000/documents");
       setDocuments(res.data);
     } catch (err) {
-      console.error("Error fetching documents:", err);
+      console.error("Error fetching:", err);
     }
   };
 
